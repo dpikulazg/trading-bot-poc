@@ -16,7 +16,7 @@ public interface ITradingStrategy
 }
 
 /// <summary>
-/// Grid Trading Bot — places buy/sell orders at evenly-spaced price levels.
+/// Grid Trading Bot - places buy/sell orders at evenly-spaced price levels.
 /// When a buy fills, it places a sell one level up. When a sell fills, it places a buy one level down.
 /// Ideal for sideways/range-bound markets (ETH/USDT, SOL/USDT).
 /// </summary>

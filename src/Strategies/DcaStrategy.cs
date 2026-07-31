@@ -8,7 +8,7 @@ using Microsoft.Extensions.Options;
 namespace CryptoTradingBot.Strategies;
 
 /// <summary>
-/// DCA Bot — buys on dips with increasing position size, sells on recovery.
+/// DCA Bot - buys on dips with increasing position size, sells on recovery.
 /// 1. Places initial buy order
 /// 2. If price drops X%, places "safety order" with multiplied size
 /// 3. Averages down the entry price
@@ -72,7 +72,7 @@ public sealed class DcaStrategy : ITradingStrategy
     {
         if (!_hasActivePosition)
         {
-            // No position — look for entry
+            // No position - look for entry
             await PlaceBaseOrderAsync(ticker.Price, ct);
             return;
         }

@@ -126,7 +126,7 @@ namespace CryptoTradingBot.Models
         /// <summary>Remaining ticks before spike mode expires (if no new HWM).</summary>
         public int SpikeTicksRemaining { get; set; }
 
-        /// <summary>Guaranteed minimum exit price — never decreases once set.</summary>
+        /// <summary>Guaranteed minimum exit price - never decreases once set.</summary>
         public decimal ProfitFloorPrice { get; set; }
 
         /// <summary>Current trailing phase name for dashboard display.</summary>

@@ -11,7 +11,7 @@ using Microsoft.Extensions.Options;
 namespace CryptoTradingBot.Exchange;
 
 /// <summary>
-/// Abstraction for exchange operations — swap implementations for different exchanges.
+/// Abstraction for exchange operations - swap implementations for different exchanges.
 /// </summary>
 public interface IExchangeClient
 {
@@ -49,7 +49,7 @@ public interface IExchangeClient
 }
 
 /// <summary>
-/// Binance REST API client — production-ready with HMAC signing.
+/// Binance REST API client - production-ready with HMAC signing.
 /// </summary>
 public sealed class BinanceClient : IExchangeClient
 {
@@ -362,7 +362,7 @@ public sealed class BinanceClient : IExchangeClient
 }
 
 /// <summary>
-/// MetaTrader 5 REST client — uses an MT5 bridge API for trading operations.
+/// MetaTrader 5 REST client - uses an MT5 bridge API for trading operations.
 /// </summary>
 public sealed class MetaTrader5Client : IExchangeClient
 {
@@ -727,7 +727,7 @@ public sealed class MetaTrader5Client : IExchangeClient
 }
 
 /// <summary>
-/// Paper trading client — no real orders, simulates fills at current price.
+/// Paper trading client - no real orders, simulates fills at current price.
 /// Essential for testing strategies before going live.
 /// </summary>
 public sealed class PaperTradingClient : IExchangeClient

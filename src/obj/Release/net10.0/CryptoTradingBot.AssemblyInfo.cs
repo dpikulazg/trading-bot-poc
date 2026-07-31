@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CryptoTradingBot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0267e10c312bdfe8c7f4c981bb9bfdaa10163b37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7ff3bda1b091d3233bcc95eeb4521795e95495a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CryptoTradingBot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CryptoTradingBot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

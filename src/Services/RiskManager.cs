@@ -36,7 +36,7 @@ namespace CryptoTradingBot.Services
                 if (_todayPnL.Date != today)
                 {
                     _logger.LogInformation(
-                        "New trading day — resetting daily PnL. Yesterday: {PnL:F2} USDT",
+                        "New trading day - resetting daily PnL. Yesterday: {PnL:F2} USDT",
                         _todayPnL.RealizedPnL
                     );
                     _todayPnL = new DailyPnL { Date = today };

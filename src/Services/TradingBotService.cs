@@ -92,7 +92,7 @@ namespace CryptoTradingBot.Services
                     }
                     catch (HttpRequestException ex)
                     {
-                        _logger.LogWarning(ex, "Exchange API error — retrying next tick");
+                        _logger.LogWarning(ex, "Exchange API error - retrying next tick");
                         await Task.Delay(2000, stoppingToken);
                     }
                     catch (Exception ex) when (ex is not OperationCanceledException)

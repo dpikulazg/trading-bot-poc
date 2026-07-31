@@ -13,7 +13,7 @@ namespace CryptoTradingBot.Analytics
     ///
     /// Solution: Three-layer defence that tightens dynamically:
     ///
-    ///   Layer 1 — Multi-Phase Callback
+    ///   Layer 1 - Multi-Phase Callback
     ///   ┌──────────────────────────────────────────────┐
     ///   │  Profit Zone        Callback %   Behaviour   │
     ///   │  0%  → +3%          2.50%        Normal      │
@@ -23,13 +23,13 @@ namespace CryptoTradingBot.Analytics
     ///   └──────────────────────────────────────────────┘
     ///   Higher profit = tighter callback = protect more gains.
     ///
-    ///   Layer 2 — Spike Detection (Rate-of-Change)
+    ///   Layer 2 - Spike Detection (Rate-of-Change)
     ///   If price moves > SpikeThreshold% in SpikeWindow ticks:
     ///     → Temporarily halve the callback (capture the spike top)
     ///     → Lock a minimum profit floor at (current - spike buffer)
     ///     → Spike mode expires after SpikeDecayTicks if no new highs
     ///
-    ///   Layer 3 — Profit Floor Lock
+    ///   Layer 3 - Profit Floor Lock
     ///   Once position reaches ProfitFloorActivation%:
     ///     → Guarantee exit no lower than FloorPercent% profit
     ///     → Floor is the HIGHER of: trailing stop vs profit floor
@@ -107,7 +107,7 @@ namespace CryptoTradingBot.Analytics
                     {
                         pos.SpikeMode = false;
                         _logger.LogInformation(
-                            "⚡ {Symbol} spike mode EXPIRED — returning to normal trailing",
+                            "⚡ {Symbol} spike mode EXPIRED - returning to normal trailing",
                             pos.Symbol
                         );
                     }
