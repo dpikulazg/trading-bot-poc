@@ -10,6 +10,8 @@ namespace CryptoTradingBot.Configuration
     {
         public string Symbol { get; set; } = "BTCUSDT";
 
+        public string Strategy { get; init; } = "Grid";
+
         public string[] Symbols => WatchlistSymbols ?? new[] { Symbol };
 
         public int PollingIntervalMs { get; init; } = 1000;
